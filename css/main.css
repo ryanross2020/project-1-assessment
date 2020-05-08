@@ -4,12 +4,32 @@
    margin: 0;
    padding: 0;
    box-sizing: inherit;
-   }
-
+}
 html {
    font-size: 14px;
-   }
-
+}
 body {
    box-sizing: border-box;
-   }
+}
+body {
+    text-align: center;
+}
+.input, .button{
+    border: 3px solid rgb(168,168,168);
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: right;
+}
+.button {
+    background-color: rgb(168,168,168);
+    color: white;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: white;
+    color: rgb(168,168,168);
+    font-weight: bold;
+    border: none;
+    outline: black;
+}
