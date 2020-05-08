@@ -8,7 +8,7 @@ let $inputCounter = $('.solution').text($inputCounter).appendTo('.input')
 
 const display = () => {
     $('.solution').children().remove()
-    $('<h1>').text(`${counter}`).appendTo('.input')
+    $('<h1>').text($inputCounter).appendTo('.input')
 }
 
 const checkInput = () => {
