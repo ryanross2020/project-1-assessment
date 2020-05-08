@@ -1,38 +1,36 @@
-let input = 0
-
+let input = 0;
 
 
 //Handlers
 
-let $inputCounter = $('.solution').text($inputCounter).appendTo('.input')
+let $inputCounter = $('.input');
 
 const display = () => {
-    $('.solution').children().remove()
-    $('<h1>').text($inputCounter).appendTo('.input')
+    $('.solution').children().remove();
+    $(',solution').text($inputCounter).appendTo('.input');
 }
 
 const checkInput = () => {
-    let $input = parseInt($('.input').val())
-        //console.log($input)
-        return $input
+    let $input = parseInt(input.val());
+        console.log($input)
+        // return $input;
 }
-
-
 
 const minus = $('.minus').on('click', ()=>{
     let subtract = checkInput()
-    if (subtract >= 0){
-        inputCounter -= subtract
-        displayUpdate()
+    if (subtract >= 0) {
+        inputCounter -= subtract;
+        display();
     }
     if (inputCounter < 0){
         $('.solution').css('color', 'red')
     }
 })
+
 const plus = $('.plus').on('click', ()=>{
     let add = checkInput()
     if (add >= 0){
-        inputCounter += Add
-        displayUpdate()
+        inputCounter += add;
+        display();
     }
 })
