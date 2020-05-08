@@ -26,7 +26,7 @@ const minus = $('.minus').on('click', ()=>{
         displayUpdate()
     }
     if (inputCounter < 0){
-        $('.solution').addClass('red')
+        $('.solution').css('color', 'red')
     }
 })
 const plus = $('.plus').on('click', ()=>{
@@ -34,8 +34,5 @@ const plus = $('.plus').on('click', ()=>{
     if (add >= 0){
         inputCounter += Add
         displayUpdate()
-    }
-    if (inputCounter < 0){
-    $('.solution').addClass('red')
     }
 })
